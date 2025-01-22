@@ -1,0 +1,122 @@
+.header-right-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.self-info-flex {
+  flex-direction: row-reverse;
+}
+.header-right-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  line-height: 40px;
+  @media screen and (max-width: 550px) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.selectBox {
+  transition: all 0.5s ease-in-out;
+  @media screen and (max-width: 550px) {
+    position: static;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.icon {
+  color: #fff;
+}
+.addItem {
+  cursor: pointer;
+  .addicon {
+    margin-right: 10px;
+  }
+}
+.badge {
+  vertical-align: text-top;
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 18px;
+}
+
+.ant-select-selection {
+  border-radius: 10px !important;
+}
+.ant-dropdown-link {
+  color: #fff;
+}
+// .addApp {
+//   cursor: pointer;
+//   .appicon {
+//     margin-right: 10px;
+//   }
+// }
+.first-level-menu {
+  @media screen and (max-width: 550px) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  > .ant-menu-horizontal {
+    line-height: 61px;
+  }
+  flex: 1;
+  margin-left: 27px;
+  max-width: calc(100% - 300px);
+  // min-width: 800px;
+  ::v-deep .ant-menu {
+    background-color: #348ee4;
+    border-bottom: 0;
+    color: #fff;
+    .ant-menu-item {
+      // .anticon,span{
+      //   font-size: 16px;
+      // }
+      &:hover {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        background-color: #109eff;
+      }
+    }
+    .ant-menu-item-selected {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      background-color: #109eff;
+    }
+    .ant-menu-submenu {
+      &:hover {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        background-color: #109eff;
+      }
+    }
+    .ant-menu-submenu-selected {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      background-color: #109eff;
+    }
+  }
+  .icon-upon {
+    display: block;
+    font-size: 24px !important;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .menu-name-upon {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: -6px;
+    font-size: 14px !important;
+  }
+}
+.menu-line-height {
+  .ant-menu-horizontal {
+    line-height: 40px !important;
+  }
+}

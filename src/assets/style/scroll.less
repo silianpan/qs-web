@@ -1,0 +1,19 @@
+::v-deep .ant-table-body {
+  &::-webkit-scrollbar {
+    //整体样式
+    height: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    //滑动滑块条样式
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #f0efef;
+    // background-image: linear-gradient(135deg, #81ffef 10%, #f067b4 100%);
+  }
+  &::-webkit-scrollbar-track {
+    //轨道的样式
+    -webkit-box-shadow: 0;
+    border-radius: 0;
+    background: #fff9f6;
+  }
+}

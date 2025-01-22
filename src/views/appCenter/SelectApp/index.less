@@ -1,0 +1,27 @@
+.content-wrapper {
+  .select-list {
+    height: 380px;
+  }
+  .select-content {
+    .content-list {
+      height: 340px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      box-sizing: border-box;
+      padding: 5px;
+    }
+  }
+}
+::v-deep .ant-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  .ant-checkbox-group-item {
+    margin-bottom: 10px;
+    &:hover {
+      background-color: rgb(233, 240, 245);
+    }
+    .ant-checkbox {
+      margin-right: 20px;
+    }
+  }
+}

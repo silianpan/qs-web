@@ -1,0 +1,203 @@
+.depart-info {
+  height: 50px;
+  padding: 0 20px;
+  border-bottom: 1px solid #e9e9e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .depart-name {
+    font-weight: 700;
+  }
+  .depart-operate {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .edit-name-tip {
+      .ant-switch {
+        vertical-align: 5px;
+        margin-right: 8px;
+      }
+    }
+  }
+  // 分割线
+  .ant-divider {
+    margin: 0 !important;
+  }
+}
+.member-btn-pane {
+  margin: 10px 0;
+  padding: 0 10px;
+  display: flex;
+  justify-content: flex-end;
+  .btn-group {
+    margin-right: auto;
+    .ant-btn {
+      margin-left: 10px;
+    }
+  }
+  .earch-input {
+    ::v-deep .ant-input-search .ant-input {
+      border-radius: 20px;
+    }
+  }
+}
+.member-table-content {
+  padding: 0 10px;
+  .member-prompt-container {
+    height: 40px;
+    font-size: 12px;
+    background-color: #fff1f1;
+    border-top: 1px solid #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .prompt-num {
+      color: #e64340;
+    }
+    .invite-member-action {
+      margin-left: 15px;
+      color: #0db3a6;
+      cursor: pointer;
+    }
+  }
+}
+.editNameInput {
+  margin-bottom: 10px;
+}
+.setDepTree {
+  margin-bottom: 10px;
+  min-width: 300px;
+  width: 350px;
+}
+.editNameBtn {
+  display: flex;
+  justify-content: flex-start;
+  .ant-btn {
+    flex: 1;
+    margin-right: 5px;
+  }
+}
+
+::v-deep .ant-modal-body {
+  padding: 0 40px 40px 40px;
+  .ant-menu {
+    display: flex;
+    justify-content: center;
+    .ant-menu-item {
+      flex: 1;
+      text-align: center;
+    }
+  }
+  .modelContent {
+    .manual-tip {
+      margin: 15px 0;
+      color: #939393;
+      font-size: 12px;
+      padding: 0;
+      .tip-item {
+        list-style-type: disc;
+      }
+      .Download_tem {
+        color: rgb(31, 145, 221);
+        cursor: pointer;
+      }
+    }
+    .dept-item {
+      margin-bottom: 20px;
+      display: flex;
+      .item-label {
+        min-width: 65px;
+        color: #000;
+        text-align: right;
+      }
+      .item-content {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .btn-group {
+      padding-left: 65px;
+      .ant-btn-primary {
+        margin-right: 10px;
+      }
+    }
+    /* 上传 */
+    .upload-wrapper {
+      width: 100%;
+      height: 325px;
+      overflow: auto;
+      box-sizing: border-box;
+      scrollbar-width: none; // 火狐
+      -ms-overflow-style: none; // ie
+      &::-webkit-scrollbar {
+        // webkit
+        display: none;
+      }
+    }
+    /* 链接 */
+    .public-link-panel {
+      height: 350px;
+      .public-link-operate {
+        padding: 20px 0;
+        border-bottom: 1px solid #ddd;
+        .link-msg {
+          margin: 10px 0;
+        }
+      }
+      .public-link-address {
+        padding: 20px 0;
+        border-bottom: 1px solid #ddd;
+        .link-msg {
+          margin: 10px 0;
+        }
+        .input-wallperpar {
+          .copy {
+            color: rgb(15, 141, 224);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+/* 区号样式 */
+.p-a-c {
+  display: flex;
+  align-items: center;
+  ::v-deep .intl-tel-input-container {
+    width: 80px;
+    padding: 0;
+    margin-right: 10px;
+  }
+  ::v-deep .area-codeNum {
+    padding: 0 10px !important;
+    margin: 0 5px !important;
+  }
+  ::v-deep .flag-list-box {
+    left: 0px;
+    top: 50px;
+    background-color: #fff !important;
+    border-radius: 5px;
+    padding: 0;
+    border: 1px solid #000;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  ::v-deep .search-input {
+    height: 35px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  ::v-deep .list-item {
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}

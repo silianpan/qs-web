@@ -1,0 +1,57 @@
+.todoDetaile {
+  position: relative;
+}
+.container-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+::v-deep .ant-list-items {
+  padding: 0 20px !important;
+  .ant-list-item {
+    min-height: 88px;
+    border: 1px solid #e9e9e9;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+.projectState {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  .projectTitle {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .state {
+    width: 70px;
+  }
+}
+.projectType {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  .peojectTypeItem {
+    margin-bottom: 5px;
+  }
+}
+.date {
+  margin-right: 20px;
+}
+.container-header {
+  height: 50px;
+  line-height: 50px;
+  background-color: #f4f6f9;
+  padding: 0 30px;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 15px;
+}

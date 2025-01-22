@@ -1,0 +1,57 @@
+.app-container-tree {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0 5px;
+  .ant-tree-switcher {
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+  .ant-tree-title {
+    padding-left: 10px;
+  }
+  .ant-tree-node-selected::before {
+    background: #6cb8fb;
+  }
+  .app-container-child-node {
+    .ant-tree-node-content-wrapper {
+      width: calc(100% - 24px);
+      display: inline-block;
+    }
+    .ant-tree-title {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      width: calc(100% - 24px);
+      .right-icon {
+        // 一开始设置为隐藏为了 鼠标移上去显示
+        display: none;
+        padding-right: 20px;
+      }
+    }
+  }
+  .app-container-tree-node {
+    .ant-tree-node-content-wrapper {
+      width: calc(100% - 24px);
+      display: inline-block;
+    }
+    .ant-tree-title {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      width: calc(100% - 24px);
+      .right-icon {
+        // 一开始设置为隐藏为了 鼠标移上去显示
+        display: none;
+        padding-right: 20px;
+      }
+    }
+    .menuIcon {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+  }
+}

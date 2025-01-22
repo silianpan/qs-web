@@ -1,0 +1,301 @@
+@import 'ant-design-vue/es/style/themes/default.less';
+
+.text-overflow() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+// mixins for clearfix
+// ------------------------
+.clearfix() {
+  zoom: 1;
+  &::before,
+  &::after {
+    display: table;
+    content: ' ';
+  }
+  &::after {
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+  }
+}
+
+.page-header-content {
+  display: flex;
+
+  .avatar {
+    flex: 0 1 72px;
+
+    & > span {
+      display: block;
+      width: 72px;
+      height: 72px;
+      border-radius: 72px;
+    }
+  }
+
+  .content {
+    position: relative;
+    top: 4px;
+    flex: 1 1 auto;
+    margin-left: 24px;
+    color: @text-color-secondary;
+    line-height: 22px;
+
+    .content-title {
+      margin-bottom: 12px;
+      color: @heading-color;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}
+
+.extra-content {
+  .clearfix();
+  float: right;
+  white-space: nowrap;
+
+  .stat-item {
+    position: relative;
+    display: inline-block;
+    padding: 0 32px;
+
+    > p:first-child {
+      margin-bottom: 4px;
+      color: @text-color-secondary;
+      font-size: @font-size-base;
+      line-height: 22px;
+    }
+
+    > p {
+      margin: 0;
+      color: @heading-color;
+      font-size: 30px;
+      line-height: 38px;
+
+      > span {
+        color: @text-color-secondary;
+        font-size: 20px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: 1px;
+      height: 40px;
+      background-color: @border-color-split;
+      content: '';
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.project-list {
+  .card-title {
+    font-size: 0;
+    a {
+      color: rgba(0, 0, 0, 0.85);
+      margin-left: 12px;
+      line-height: 24px;
+      height: 24px;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 18px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #333333;
+      &:hover {
+        color: #1890ff;
+      }
+    }
+  }
+
+  .card-description {
+    color: rgba(0, 0, 0, 0.45);
+    height: 66px;
+    line-height: 22px;
+    overflow: hidden;
+  }
+
+  .project-item {
+    display: flex;
+    margin-top: 8px;
+    overflow: hidden;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+
+    a {
+      color: rgba(0, 0, 0, 0.45);
+      display: inline-block;
+      flex: 1 1 0;
+
+      &:hover {
+        color: #1890ff;
+      }
+    }
+
+    .download {
+      color: rgba(0, 0, 0, 0.25);
+      flex: 0 0 auto;
+      float: right;
+    }
+  }
+
+  .ant-card-meta-description {
+    color: rgba(0, 0, 0, 0.45);
+    height: 44px;
+    line-height: 22px;
+    overflow: hidden;
+  }
+}
+
+.item-group {
+  padding: 20px 0 8px 24px;
+  font-size: 0;
+
+  a {
+    color: rgba(0, 0, 0, 0.65);
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 13px;
+    width: 25%;
+  }
+}
+
+.members {
+  a {
+    display: block;
+    margin: 12px 0;
+    line-height: 24px;
+    height: 24px;
+
+    .member {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.65);
+      line-height: 24px;
+      max-width: 100px;
+      vertical-align: top;
+      margin-left: 12px;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+
+    &:hover {
+      span {
+        color: #1890ff;
+      }
+    }
+  }
+}
+
+.mobile {
+  .project-list {
+    .project-card-grid {
+      width: 100%;
+    }
+  }
+
+  .more-info {
+    border: 0;
+    padding-top: 16px;
+    margin: 16px 0 16px;
+  }
+
+  .headerContent .title .welcome-text {
+    display: none;
+  }
+}
+
+.left-box {
+  height: 100%;
+  .left-chil-box {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 25px;
+  }
+}
+.top-back{
+  background-color: #fff;
+  margin-bottom: 16px;
+}
+.top-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 16px;
+  > div {
+    flex: 1;
+    height: 150px;
+    background: #ffffff;
+    margin: 0 5px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.a-col {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.card-container {
+  height: 304px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  @media screen and (max-width: 768px) {
+    height: 465px;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.card-container-height {
+  height: 304px !important;
+}
+
+.card-title {
+  font-family: Microsoft YaHei;
+  font-size: 18px;
+  color: #333333;
+  font-weight: 400;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 18px;
+  margin-bottom: 0;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 8px;
+    height: 20px;
+    background: #348ee4;
+    border-radius: 4px;
+  }
+}
+
+.warnRight {
+  height: 252px;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+}

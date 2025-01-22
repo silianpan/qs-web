@@ -1,0 +1,16 @@
+{
+  "basicSetting": {},
+  "processData": {},
+  "formData": {
+    "formRef": "elForm",
+    "size": "small",
+    "labelPosition": "right",
+    "labelWidth": 100,
+    "gutter": 15,
+    "": false,
+    "span": 12,
+    "formBtns": true,
+    "fields": []
+  },
+  "advancedSetting": {}
+}

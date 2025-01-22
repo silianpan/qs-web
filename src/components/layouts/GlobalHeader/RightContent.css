@@ -1,0 +1,94 @@
+.header-right-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.self-info-flex {
+  flex-direction: row-reverse;
+}
+.header-right-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  line-height: 0;
+}
+@media screen and (max-width: 550px) {
+  .header-right-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.selectBox {
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 550px) {
+  .selectBox {
+    position: static;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.icon {
+  color: #fff;
+}
+.addItem {
+  cursor: pointer;
+}
+.addItem .addicon {
+  margin-right: 10px;
+}
+.badge {
+  vertical-align: text-top;
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 18px;
+}
+.ant-select-selection {
+  border-radius: 10px !important;
+}
+.ant-dropdown-link {
+  color: #fff;
+}
+.first-level-menu {
+  flex: 1;
+  max-width: calc(100% - 300px);
+}
+@media screen and (max-width: 550px) {
+  .first-level-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.first-level-menu > .ant-menu-horizontal {
+  line-height: 61px;
+}
+.first-level-menu ::v-deep .ant-menu {
+  background-color: #348EE4;
+  border-bottom: 0;
+  color: #fff;
+}
+.first-level-menu ::v-deep .ant-menu .ant-menu-item:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  background-color: #109eff;
+}
+.first-level-menu ::v-deep .ant-menu .ant-menu-item-selected {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  background-color: #109eff;
+}
+.first-level-menu ::v-deep .ant-menu .ant-menu-submenu:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  background-color: #109eff;
+}
+.first-level-menu ::v-deep .ant-menu .ant-menu-submenu-selected {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  background-color: #109eff;
+}

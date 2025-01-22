@@ -1,0 +1,106 @@
+.member-select-container {
+  width: 100%;
+  height: 100%;
+}
+.empty-list {
+  overflow-x: hidden;
+  overflow-y: auto;
+  cursor: pointer;
+}
+.has-list {
+  border: 1px solid #d9d9d9;
+  .member-tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    .tabs {
+      padding: 0;
+      margin: 0;
+      .tab-item {
+        color: #0799ee;
+      }
+    }
+    .input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ::v-deep .ant-input {
+        border-radius: 25px;
+      }
+    }
+  }
+  .member-tab-content {
+    border-top: 1px solid #d9d9d9;
+    .member-tree {
+      height: 300px;
+      display: flex;
+      .tree-scroll-bg {
+        flex: 1;
+        height: 100%;
+        border-right: 1px solid #d9d9d9;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        .all-member {
+          height: 30px;
+          line-height: 30px;
+          padding: 0 10px;
+          cursor: pointer;
+          color: #0799ee;
+          background: #c8e7f5;
+        }
+        .clearAllMemner {
+          background: #ffffff;
+        }
+        .tree-bg {
+          flex: 1;
+          box-sizing: border-box;
+          padding: 0 10px;
+        }
+      }
+      .member-list {
+        flex: 1;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        .select-all-item {
+          color: #0799ee;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .member-select-list {
+          flex: 1;
+          box-sizing: border-box;
+          padding: 7px 10px;
+          ::v-deep .ant-checkbox-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .ant-checkbox-wrapper {
+              margin: 5px
+            }
+            >label{
+              &:first-of-type{
+                margin-left: 5px;
+              }
+            }
+            
+          }
+          ::v-deep .ant-checkbox-group-item {
+            margin: 10px 0px;
+          }
+        }
+      }
+    }
+  }
+}

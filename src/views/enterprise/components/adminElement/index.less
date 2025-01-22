@@ -1,0 +1,122 @@
+.manager-group-name {
+  height: 50px;
+  padding: 10px 20px 0;
+  font-weight: 700;
+  line-height: 40px;
+  border-bottom: 1px solid #eeecec;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.group-config {
+  margin: 0 20px;
+  .config-line {
+    position: relative;
+    display: flex;
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      background: #eeecec;
+      content: '';
+    }
+    .line-item {
+      display: inline-block;
+      padding: 20px 0;
+      .inline-line {
+        padding: 0 20px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        .inline-left {
+          margin-right: 20px;
+        }
+      }
+      .checkbox-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        .checkbox-item {
+          margin-bottom: 20px;
+          display: flex;
+          .inline-left {
+            width: 100px;
+          }
+        }
+      }
+      .range-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        .line-item-detail {
+          margin-bottom: 20px;
+          .edit {
+            display: flex;
+            justify-content: space-between;
+          }
+          .view-wallperpar {
+            width: 500px;
+            .view-item {
+              display: inline-block;
+              color: #1f2d3d;
+              background: #f3f6fc;
+              border-radius: 4px;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+    .left {
+      width: 180px;
+      color: #1f2d3d;
+      font-size: 14px;
+      padding: 20px 0;
+    }
+    .right {
+      flex: 1;
+      color: #5e6d82;
+      .item-content {
+        .adminEdit {
+          display: flex;
+          justify-content: space-between;
+          .admin-wallperpar {
+            width: 500px;
+            .admin-item {
+              display: inline-block;
+              color: #1f2d3d;
+              background: #f3f6fc;
+              border-radius: 4px;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+      .app-wallperpar {
+        width: 500px;
+        .app-item {
+          display: inline-block;
+          color: #1f2d3d;
+          background: #f3f6fc;
+          border-radius: 4px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+.setDepTree {
+  margin-bottom: 10px;
+  min-width: 300px;
+  width: 350px;
+}
+.editNameBtn {
+  display: flex;
+  justify-content: flex-start;
+  .ant-btn {
+    flex: 1;
+    margin-right: 5px;
+  }
+}

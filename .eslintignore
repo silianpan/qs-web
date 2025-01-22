@@ -1,0 +1,8 @@
+**/node_modules
+
+/src/views/lowCode/components/BasicSetting/*
+/src/views/lowCode/components/DynamicForm/*
+/src/views/lowCode/components/FormControls/*
+/src/views/lowCode/components/Process/*
+/src/views/lowCode/components/utils/*
+/src/assets/font/*

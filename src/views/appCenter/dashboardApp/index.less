@@ -1,0 +1,39 @@
+.dashboard-app-container {
+  height: 90%;
+}
+.sider {
+  background-color: white;
+  .logo {
+    height: 32px;
+    background: rgba(3, 3, 3, 0.2);
+    margin: 16px;
+  }
+}
+.mian {
+  position: relative;
+  .mian-header {
+    background: #fff;
+    padding: 0;
+  }
+  .mian-content {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    .widget-wrapper {
+      flex: 1;
+      overflow: auto;
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .form-footer {
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+}
