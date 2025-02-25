@@ -25,8 +25,8 @@ export function getVatInvoice(image, params) {
 export function OCRTextinBillsCrop(data) {
   return request({
     headers: {
-      'x-ti-app-id': 'bedf89fb9e283f1bb4ac6702ababeaa4',
-      'x-ti-secret-code': 'c3df57f96b75ea0a6a5c26094919d076',
+      'x-ti-app-id': '',
+      'x-ti-secret-code': '',
       'Content-Type': 'application/octet-stream;charset=utf-8'
     },
     baseURL: import.meta.env.VITE_APP_TEXTIN_API,
